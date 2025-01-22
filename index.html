@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>APNA_NEWS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <!-- Navigation -->
+        <nav>
+            <div class="main-nav container">
+                <a href="#" onclick="reload()">
+                    <img src="logo5.png" alt="companylogo"></a>
+                <!-- logo5.jpg -->
+                <div class="nav-link">
+                    <ul>
+                        <li class="hover1 nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                        <li class="hover1 nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li class="hover1 nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        <li class="hover1 nav-item" id="science" onclick="onNavItemClick('science')">science</li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input id="search-text" type="text" class="news-input" placeholder="e.g.science">
+                    <button id="search-button" class="search-button">search</button>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation end -->
+         
+        <main>
+            <div class="cards-container container" id="cards-container"></div>    
+        </main>       
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="card1.jpg" alt="photo" id="news-img">
+                    <!-- https://via.placeholder.com/400*200" -->
+                </div>
+
+                     <div class="card-content"> 
+                        <h3 id="news-title">This is a card</h3>
+                        <h6 class="news-source" id="news-source">End Gadget 26/08/2025</h6>
+                        <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic maiores quae provident officia tempora autem exercitationem est recusandae nam ipsam.</p>
+                    
+                    </div>
+            
+                </div> 
+
+
+            </div>
+        </template>
+        
+       <script src="script.js"></script>
+    </body>
+</html>
